@@ -27,7 +27,7 @@ public class lab4A {
             }
         }
 
-        System.out.println(unique);
+        // System.out.println(unique);
 
         // map of paired chars
         HashMap<Character, Integer> paired = new HashMap<Character,Integer>();
@@ -41,7 +41,7 @@ public class lab4A {
             count = 0;
         }
 
-        System.out.println(paired);
+        // System.out.println(paired);
 
         // if both are same
         if(unique.size() == paired.size()) {

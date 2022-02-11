@@ -1,55 +1,75 @@
-import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class lab4B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
+        String num = sc.nextLine();
+        int n =Integer.parseInt(num);
+        
 
-        String que = "";
+        String[] que = new String[n];
         for(int i = 0; i < n; i++) {
-            que += sc.nextLine();
+            que[i] = sc.nextLine();
         }
 
-        int  k = sc.nextInt();
-        sc.nextLine();
-        System.out.println(nGrams(que, k)); 
-        sc.close();
-    }
+        String  kk = sc.nextLine();
+        int k = Integer.parseInt(kk);
+        // sc.nextLine();
+        // sc.close();
+        // for(int i = 0; i < n; i++) {
+        //     System.out.println(que[i]);
+        // }
 
-    private static String nGrams(String str, int k) {
-        
-        HashMap<String,Integer> grams = new HashMap<String,Integer>();
-        int maxVal = -(int)1e9;
+
+        TreeMap<String,Integer> grams = new TreeMap<String,Integer>();
+        int maxVal = 0;
         String maxString = "";
-        for(int i = 0; i <= str.length() - k; i++) {
-            String current = str.substring(i,i+k);
-            if(grams.containsKey(current)){
-                int val = grams.get(current);
-                grams.put(current, ++val);    
-                if(val > maxVal) {
-                    maxVal = val;
-                    maxString = current;
+
+        for(String s : que){
+            for(int i = 0; i < s.length(); i++) {
+                if(i+k<=s.length()){
+                    String current = s.substring(i,i+k);
+                if(current.contains(" ") || current.contains(",") || current.contains(".") || current.contains("\n")){
+                }else{
+                    if(grams.containsKey(current)){
+                        int val = grams.get(current);
+                        val=val+1;
+                        grams.put(current,val);     
+                    }else{
+                        grams.put(current, 1);  
+                    }
                 }
-            }else{
-                grams.put(current, 1);
-                if(grams.get(current) > maxVal) {
-                    maxVal = grams.get(current);
-                    maxString = current;
                 }
+                
+            }
+        }
+            
+        
+
+        Set<String> var = grams.keySet();
+        Object[] arr = var.toArray();
+
+        for(int i = 0; i < arr.length ; i++ ){
+            if(grams.get(arr[i]) > maxVal){
+                maxString = (String)arr[i];
+                maxVal = grams.get(arr[i]);
             }
         }
 
+        // System.out.println(grams);
+
         if(k == 1) {
-            return "Unigram "+maxString;
+            System.out.println("Unigram "+maxString);
         }
-        else if(k == 2) {
-            return "Bigram "+maxString;
+        if(k == 2 ) {
+            System.out.println("Bigram "+maxString);
         }
-        else {
-            return "Trigram "+maxString;
+        if(k == 3 ) {
+            System.out.println("Trigram "+maxString);
         }
-        
+
+        sc.close();
     }
 }

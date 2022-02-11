@@ -7,7 +7,7 @@ public class lab1A {
 	private static String namesBack(String str) {
 
 		str = str.trim();
-		str = str.replaceAll("( +)", " ");
+		// str = str.replaceAll("( +)", " ");
 		if(str.length() == 0) {
 			return null;
 		}
