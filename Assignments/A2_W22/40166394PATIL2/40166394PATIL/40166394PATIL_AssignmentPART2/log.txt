@@ -1,0 +1,14 @@
+file:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/1/Tom.txt
+file:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/3/Harry.txt
+file:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/2/Sam.txt
+file:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/.DS_Store
+directory:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/1
+directory:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/3
+directory:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data/2
+file:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/.DS_Store
+directory:/Users/rahul/eclipse-workspace/Assignment2/src/p2/Data/Data
+Duplicate Record p2.Sales@5ebec15 found Exception!
+Duplicate Record p2.Sales@79b4d0f found Exception!
+Duplicate Record p2.Sales@79698539 found Exception!
+Duplicate Record p2.Sales@2ed94a8b found Exception!
+Duplicate Record p2.Sales@dfd3711 found Exception!
