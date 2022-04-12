@@ -1,0 +1,40 @@
+CBS20 Big_Brother
+S 20.00
+E 21.00
+
+NBC20 World_Of_Dance
+S 20.00
+E 21.00
+
+ABC2030 The_Goldbergs
+S 20.30
+E 21.00
+
+ABC21 Modern_Family
+S 21.00
+E 21.30
+
+PBS21 Wonders_Of_Mexico
+S 21.00
+E 22.00
+
+FOX21 Gordon_Ramsay's_24_Hours_To_Hell_And_Back
+S 21.00
+E 22.00
+
+NBC21 World_Of_Dance
+S 20.00
+E 21.00
+
+ABC2130 American_Housewives
+S 21.30
+E 22.00
+
+CBS22 Criminal_Minds
+S 22.00
+E 23.00
+
+ABC22 Shark_Tank
+S 22.00
+E 23.00
+
